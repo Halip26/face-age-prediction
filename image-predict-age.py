@@ -164,7 +164,7 @@ def predict_age(input_path: str):
             (start_x, yPos),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.5,
-            (4, 196, 33),
+            (62, 7, 227),
             thickness=2,
         )
         # draw the rectangle around the face
@@ -173,8 +173,9 @@ def predict_age(input_path: str):
         )
     # Display processed image
     display_img("Age Prediction v1.0", frame)
+
     # save the image if you want
-    # cv2.imwrite("predicted_age.jpg", frame)
+    cv2.imwrite("output/image_predicted_age.jpg", frame)
 
 
 if __name__ == "__main__":
