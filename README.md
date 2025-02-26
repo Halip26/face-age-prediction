@@ -3,11 +3,13 @@
 This code is a Python script that uses OpenCV and Caffe models to predict the age of faces detected in images or live video.
 [Age Prediction using OpenCV in Python](https://www.thepythoncode.com/article/predict-age-using-opencv)
 
-## The age Predicted results
+## The age prediction result here
 
-![3-people_detected.jpg](output/3-people_detected.jpg)
+![Screenshot-preview-me.png](output/Screenshot-preview-me.png)
 
-## Prerequisites
+---
+
+## Requirements
 
 Before running this code, make sure you have the following installed:
 
@@ -29,7 +31,7 @@ Before running the code, do the following:
 - Run the program:
 
     ```py
-    python images-predict-age.py images/3-people.jpg
+    python.exe image-predict-age.py images/your_image.jpg
     ```
 
 ## Usage
