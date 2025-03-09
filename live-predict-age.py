@@ -57,7 +57,7 @@ def get_faces(frame, confidence_threshold=0.5):
                 [frame.shape[1], frame.shape[0], frame.shape[1], frame.shape[0]]
             )
             # convert to integers
-            start_x, start_y, end_x, end_y = box.astype(np.int)
+            start_x, start_y, end_x, end_y = box.astype(np.int64)
             # widen the box a little
             start_x, start_y, end_x, end_y = (
                 start_x - 10,
@@ -158,7 +158,7 @@ def predict_age():
                 (start_x, yPos),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.5,
-                (4, 196, 33),
+                (62, 7, 227),
                 thickness=2,
             )
             # draw the rectangle around the face
@@ -170,7 +170,7 @@ def predict_age():
                 thickness=2,
             )
         # Display processed image
-        cv2.imshow("Age Estimator", frame)
+        cv2.imshow("Age Prediction v1.0", frame)
         if cv2.waitKey(1) == ord("q"):
             break
         # save the image if you want
